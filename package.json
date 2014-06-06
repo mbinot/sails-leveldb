@@ -1,0 +1,43 @@
+{
+  "name": "waterline-leveldb",
+  "version": "0.10.0",
+  "description": "leveldb adapter for Sails / Waterline",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/integration/runner -R spec -b"
+  },
+  "repository": {"type":"git","url":"git://github.com/balderdashy/waterline-%s.git"},
+  "keywords": [
+    "leveldb",
+    "adapter",
+    "sails",
+    "waterline",
+    "sails.js",
+    "plugin"
+  ],
+  "author": "Marcel P. Binot",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+      "lodash": "~2.4.1",
+      "levelup" : "~0.18.3",
+      "leveldown" : "~0.10.2",
+      "async" : "~0.8.0",
+      "bluebird" : "~1.2.4",
+      "waterline-errors": "~0.10.0",
+      "waterline-criteria": "~0.10.2"
+  },
+  "devDependencies": {
+    "waterline-adapter-tests": "~0.10.0",
+    "mocha": "*",
+    "captains-log": "~0.11.0"
+  },
+  "waterlineAdapter": {
+    "type": "leveldb",
+    "interfaces": [
+      "semantic",
+      "queryable"
+    ],
+    "waterlineVersion": "~0.10.0"
+  }
+}
