@@ -6,7 +6,10 @@
   "scripts": {
     "test": "node test/integration/runner -R spec -b"
   },
-  "repository": {"type":"git","url":"git://github.com/balderdashy/waterline-%s.git"},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/balderdashy/waterline-%s.git"
+  },
   "keywords": [
     "leveldb",
     "adapter",
@@ -19,13 +22,12 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-      "lodash": "~2.4.1",
-      "levelup" : "~0.18.3",
-      "leveldown" : "~0.10.2",
-      "async" : "~0.8.0",
-      "bluebird" : "~1.2.4",
-      "waterline-errors": "~0.10.0",
-      "waterline-criteria": "~0.10.2"
+    "async": "~0.8.0",
+    "bluebird": "~1.2.4",
+    "level": "~0.18.0",
+    "lodash": "~2.4.1",
+    "waterline-criteria": "~0.10.2",
+    "waterline-errors": "~0.10.0"
   },
   "devDependencies": {
     "waterline-adapter-tests": "~0.10.0",
